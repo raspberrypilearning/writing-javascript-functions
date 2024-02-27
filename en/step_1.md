@@ -1,59 +1,42 @@
-## Introduction
+Functions break your code into particular tasks so it is easier to understand. Especially when you have tasks that need to be done multiple times. They're like tools you can use over and over in different parts of your code.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
++ Writing a Function: 
+    + start with the function keyword to indicate the creation of a function. Give your function a name (e.g., addNumbers).
+    + include brackets `()` after the function name for parameters (inputs) your function needs.
+    + use open curly braces `{` to define the block of code that the function will execute.
+    + close the curly braces `}` to show the end of the function.
 
-### What you will make
+    --- code ---
+    ---
+    language: js
+    filename:
+    line_numbers: true
+    line_number_start:
+    line_highlights:
+    ---
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
+        function sayHello() {
+           console.log("Hello, World!");
+        }
+        
+    --- /code ---
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
+Here, you've created a simple function named `sayHello`.
 
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
++ Using a Function:
 
---- collapse ---
----
-title: What you will need
----
-### Hardware
+    --- code ---
+    ---
+    language: js
+    filename:
+    line_numbers: true
+    line_number_start:
+    line_highlights:
+    ---
 
-+ A computer or tablet capable of running Scratch 3
+        sayHello(); // Outputs: Hello, World!
+        
+    --- /code ---
 
-### Software
+When you call this function, it will execute the code inside the curly braces and print "Hello, World!" to the console. You can use the function (call it) by writing the syntax shown above.
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
