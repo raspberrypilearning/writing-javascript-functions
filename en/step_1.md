@@ -1,42 +1,51 @@
-Functions break your code into particular tasks so it is easier to understand. Especially when you have tasks that need to be done multiple times. They're like tools you can use over and over in different parts of your code.
+A function is a reusable block of code that performs a specific task.
 
-+ Writing a Function: 
-    + start with the function keyword to indicate the creation of a function. Give your function a name (e.g., addNumbers).
-    + include brackets `()` after the function name for parameters (inputs) your function needs.
-    + use open curly braces `{` to define the block of code that the function will execute.
-    + close the curly braces `}` to show the end of the function.
+Functions break your code into particular tasks so it is easier to understand. 
 
-    --- code ---
-    ---
-    language: js
-    filename:
-    line_numbers: true
-    line_number_start:
-    line_highlights:
-    ---
+Especially when you have tasks that need to be done multiple times. They're like tools you can use over and over in different parts of your code.
 
-        function sayHello() {
-           console.log("Hello, World!");
-        }
-        
-    --- /code ---
+### Writing a Function: 
++ Start with the `function` keyword to indicate the creation of a function. 
++ Give your function a name (e.g. `addNumbers`).
++ Include brackets `()` after the function name. These can include parameters (inputs) your function needs.
++ Use open curly braces `{` to define the block of code that the function will execute.
++ Close the curly braces `}` to show the end of the function.
 
-Here, you've created a simple function named `sayHello`.
+Here is an example:
 
-+ Using a Function:
+--- code ---
+---
+language: js
+filename:
+line_numbers:
+line_number_start:
+line_highlights:
+---
+function addNumbers(a, b) {
+  return a + b;
+}
+    
+--- /code ---
 
-    --- code ---
-    ---
-    language: js
-    filename:
-    line_numbers: true
-    line_number_start:
-    line_highlights:
-    ---
+Here, `addNumbers` is a function that takes two inputs `a` and `b` and returns their sum.
 
-        sayHello(); // Outputs: Hello, World!
-        
-    --- /code ---
+### Using a Function:
 
-When you call this function, it will execute the code inside the curly braces and print "Hello, World!" to the console. You can use the function (call it) by writing the syntax shown above.
+You use a function by **calling** it.
 
+Here, the function `addNumbers()` is called with values 5 and 8. 
+
+It returns the sum of the number, which you can then use. In this example, the sum of 5 and 8 is assigned to the variable `result` and then `result` is displayed in the Console.
+
+--- code ---
+---
+language: js
+filename:
+line_numbers: 
+line_number_start:
+line_highlights:
+---
+let result = addNumbers(5, 8);
+console.log(result); // Outputs: 13
+    
+--- /code ---
